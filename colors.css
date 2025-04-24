@@ -1,7 +1,7 @@
 :root {
-    --cor1: #023059;
-    --cor2: #03658C;
-    --cor3: #F29F05;
-    --cor4: #F28705;
-    --cor5: #F23005;
+    --cor1: #023059; /* Azul escuro */
+    --cor2: #03658C; /* Azul médio */
+    --cor3: #F29F05; /* Laranja claro */
+    --cor4: #F28705; /* Laranja escuro */
+    --cor5: #F23005; /* Vermelho */
 }

@@ -1,89 +1,129 @@
-@import url(colors.css);
-@import url('https://fonts.googleapis.com/css2?family=Honk&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+/* Importações */
+@import url("colors.css");
+@import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
-body {
-    background-color: var(--cor1);
-    color: var(--cor1);
-    font-family: 'Winky Sans', sans-serif;
+/* Reset e Estilos Base */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.home {
+body {
+    background: var(--cor1);
+    color: var(--cor4);
+    font-family: "Winky Sans", sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 90%;
-    width: 100%;
-    background-color: var(--cor3);
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.356);
-    box-sizing: border-box;
-
-    h1 {
-        font-size: clamp(2rem, 8vw, 3.5rem);
-        text-align: center;
-        width: 100%;
-        margin: 0 0 20px 0;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    li {
-        margin: 10px 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    a {
-        color: var(--cor1);
-        text-decoration: none;
-        font-size: clamp(1rem, 4vw, 1.25rem);
-        transition: color 0.3s ease, transform 0.3s ease;
-        display: inline-block;
-
-        &:hover {
-            color: var(--cor5);
-            transform: scale(1.05);
-        }
-    }
 }
 
+/* Header */
+header {
+    background: var(--cor2);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--cor5);
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.content {
+    background: var(--cor3);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.content h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--cor5);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.content h2:hover,
+.content h2:focus {
+    color: var(--cor4);
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--cor5);
+    background: var(--cor2);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: var(--cor2);
+    padding: 1rem;
+    text-align: center;
+    color: var(--cor5);
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
 @media (min-width: 768px) {
-    .home {
-        max-width: 700px;
-        padding: 30px;
+    .content {
+        padding: 3rem;
+    }
+
+    nav ul {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 1.5rem;
+    }
 
-        ul {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        li {
-            margin: 10px;
-            width: auto;
-        }
+    nav li {
+        width: auto;
     }
 }
 
 @media (min-width: 1024px) {
-    .home {
-        max-width: 900px;
-        padding: 40px;
+    main {
+        padding: 3rem;
+    }
+
+    .content {
+        max-width: 1000px;
     }
 }
