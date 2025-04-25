@@ -56,13 +56,6 @@ main {
     color: var(--cor5);
     text-align: center;
     margin-bottom: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.content h2:hover,
-.content h2:focus {
-    color: var(--cor4);
 }
 
 /* Menu */
