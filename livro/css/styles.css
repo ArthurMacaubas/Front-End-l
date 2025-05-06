@@ -1,3 +1,31 @@
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+    color: #0066cc;
+    outline: none;
+}
+
+header nav ul li a.active {
+    color: #0066cc;
+    font-weight: 700;
+}
+
 .menu {
     display: grid;
     align-items: center;
@@ -33,7 +61,7 @@ p {
     font-family: 'Tahoma';
 }
 
-a {
+.btn {
     background-color: green;
     font-size: 14px;
     font-weight: bold;
