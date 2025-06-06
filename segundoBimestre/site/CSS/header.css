@@ -1,0 +1,27 @@
+.ul-menu {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: .5s;
+}
+
+header{
+    background: linear-gradient(rgb(231, 183, 120) 1%, rgb(223, 192, 152));
+    height: 100px;
+}
+
+a {
+    font-size: var(--linkSize);
+    text-decoration: none;
+    color: bisque;
+    transition: .5s;
+}
+
+a:hover{
+    color: rgb(145, 128, 108);
+    font-size: 30px;
+    transition: .5s;
+}

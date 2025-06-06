@@ -1,0 +1,14 @@
+:root {
+    --backColor: rgb(248, 229, 205);
+    --linkSize: 1.5rem;
+
+}
+
+
+
+
+
+body {
+    background-color: var(--backColor);
+}
+
