@@ -1,15 +1,92 @@
 :root {
-    --backColor: rgb(248, 229, 205);
-    --linkSize: 1.5rem;
+    --backColor: #f9f4f0; 
+    --primaryColor: #2a1f1a; 
+    --secondaryColor: #5c4b3d; 
+    --accentColor: #d4a373; 
+    --linkSize: 1.2rem;
     --linkSizeMobile: 1rem;
-
+    --fontFamily: 'Poppins', sans-serif;
 }
-
-
-
-
 
 body {
     background-color: var(--backColor);
+    font-family: var(--fontFamily);
+    line-height: 1.6;
 }
 
+.part1 {
+    color: #fff;
+    background-color: var(--primaryColor);
+    background-image: url(../img/part1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.part1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.part2 {
+    color: #fff;
+    background-color: var(--secondaryColor);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 20px;
+}
+
+.part3 {
+    color: #fff;
+    background-color: var(--primaryColor);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+    .part1, .part2, .part3 {
+        font-size: 1.5rem;
+        height: 70vh;
+    }
+    .part1::after {
+        background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .part1, .part2, .part3 {
+        font-size: 1.2rem;
+        height: 60vh;
+    }
+}
