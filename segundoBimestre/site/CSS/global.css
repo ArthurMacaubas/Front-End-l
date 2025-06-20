@@ -1,0 +1,9 @@
+:root {
+    --backColor: #f9f4f0; 
+    --primaryColor: #2a1f1a; 
+    --secondaryColor: #5c4b3d; 
+    --accentColor: #d4a373; 
+    --linkSize: 1.2rem;
+    --linkSizeMobile: 1rem;
+    --fontFamily: 'Poppins', sans-serif;
+}
