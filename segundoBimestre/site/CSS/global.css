@@ -1,9 +1,22 @@
+@import url(footer.css);
+@import url(header.css);
+@import url(reset.css);
+@import url(styles.css);
+
 :root {
-    --backColor: #f9f4f0; 
-    --primaryColor: #2a1f1a; 
+    --headerColor: rgb(202, 173, 137);
+    --backColor: #f5e9d4; 
+    --bodyFontColor: #3c2f2f; 
     --secondaryColor: #5c4b3d; 
     --accentColor: #d4a373; 
     --linkSize: 1.2rem;
     --linkSizeMobile: 1rem;
     --fontFamily: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
 }
