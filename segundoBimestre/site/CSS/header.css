@@ -1,10 +1,53 @@
 header {
+    position: relative;
     background-color: var(--headerColor);
-
+    height: 60px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    overflow-;
+    gap: 30px; 
+    padding: 0 20px;
+}
+
+header img {
+    position: absolute;
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header nav ul.header {
+    display: flex;
+    flex-direction: row;
+    list-style: none; 
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    gap: 15px;
+}
+
+header nav ul.header li {
+    display: inline-flex;
+}
+
+header nav ul.header a {
+    text-decoration: none;
+    color: var(--bodyFontColor);
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px; 
+    transition: .5s; 
+}
+
+header nav ul.header a:hover {
+    color: #8B4513;
+    font-size: 22px;
+    transition: .5s ease-in-out;
 }
