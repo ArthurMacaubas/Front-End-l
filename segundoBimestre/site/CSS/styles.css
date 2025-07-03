@@ -1,7 +1,14 @@
 @import url(global.css);
 
+    main {
+        padding-inline: 10vh;
+        background-color: var(--backColor);
+    }
+
+
 #top {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1447933601403-0c6688de566e');;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1447933601403-0c6688de566e');
+    ;
     background-size: cover;
     background-position: center;
 
@@ -14,4 +21,30 @@
     color: white;
     position: relative;
     height: 100vh;
+
+    h1 {
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+#sobre {
+    background-color: var(--backColor);
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    h2 {
+        margin-bottom: 8rem;
+        padding: 50px;
+    }
 }
