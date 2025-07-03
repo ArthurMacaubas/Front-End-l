@@ -1,5 +1,6 @@
 header {
-    position: relative;
+    position: sticky;
+    top: 0;
     background-color: var(--headerColor);
     height: 60px;
     display: flex;
@@ -8,12 +9,10 @@ header {
     align-items: center;
     gap: 30px; 
     padding: 0 20px;
+    z-index: 10;
 }
 
-header img {
-    position: absolute;
-    height: 50px;
-}
+
 
 header nav {
     display: flex;
@@ -44,10 +43,11 @@ header nav ul.header a {
     font-size: 20px;
     padding: 5px 10px; 
     transition: .5s; 
+    border-radius: 10px;
 }
 
 header nav ul.header a:hover {
     color: #8B4513;
-    font-size: 22px;
-    transition: .5s ease-in-out;
+    background-color: var(--backColor);
+    transition: .5s;
 }

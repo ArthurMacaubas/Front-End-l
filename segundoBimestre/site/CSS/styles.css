@@ -1,8 +1,8 @@
 @import url(global.css);
 
-    main {
-        background-color: var(--backColor);
-    }
+main {
+    background-color: var(--backColor);
+}
 
 #top {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1447933601403-0c6688de566e');
@@ -19,6 +19,15 @@
     color: white;
     position: relative;
     height: 100vh;
+    margin-top: -60px;
+
+    img {
+        background-color: var(--accentColor);
+        margin-bottom: 15px;
+        border-radius: 30%;
+        position: static;
+        height: 200px;
+    }
 
     h1 {
         font-weight: bold;
@@ -34,10 +43,19 @@
         background-color: var(--backColor);
         border-radius: 10px;
         padding: 10px;
-        margin-top: 10px;
+        margin-top: 15px;
+
+        font-size: 18px;
 
         text-decoration: none;
-        color: black;
+        color: var(--bodyFontColor);
+    }
+
+    a:hover {
+        color: var(--backColor);
+        background-color: var(--bodyFontColor);
+        border-color: var(--backColor);
+        transition: .5;
     }
 }
 
@@ -56,4 +74,32 @@
         margin-bottom: 8rem;
         padding: 50px;
     }
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--backColor);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.up{
+    text-decoration: none;
+    color: var(--bodyFontColor);
+}
+
+#back-to-top:hover, .up::before {
+    color: var(--backColor);
+    background-color: rgb(179, 165, 148);
+    transform: scale(1.1);
 }

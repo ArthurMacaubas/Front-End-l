@@ -10,13 +10,11 @@
     <title>Café Aroma - 2° Bim</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/global.css">
-    <script src="JS/scroll-animation.js"></script>
-    <link rel="stylesheet" href="CSS/animations.css">
+    <script src="backToTop.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="img/icon.png" alt="">
         <nav>
             <ul class="header">
                 <li><a href="#">Home</a></li>
@@ -26,29 +24,31 @@
         </nav>
     </header>
     <main>
-        <article class="page">
-            <section id="top" class="scroll-animation">
-                <h1>Bem-vindo ao Café Aroma</h1>
-                <p>Descubra o sabor único dos nossos cafés artesanais!</p>
-                <a href="#menu" class="btn">Nós conheça</a>
-            </section>
-            <section id="sobre" class="scroll-animation">
-                <h2>Sobre Nós</h2>
-                <p>No Café Aroma, combinamos paixão por café com um ambiente acolhedor. Cada xícara é feita com grãos selecionados e muito carinho.</p>
-            </section>
-            <section id="menu" class="scroll-animation">
-                <h2>Nosso Menu</h2>
-                <p>Explore nossas opções de cafés, chás e sobremesas.</p>
-                <div class="menu-item"></div>
-                <div class="menu-item"></div>
-                <div class="menu-item"></div>
-            </section>
-            <section id="local" class="scroll-animation">
-                <h2>Nos encontre!</h2>
-                <p>Rua 123, bairro1, cidadeAlfa.</p>
-                <a href="#">Visite-nos</a>
-            </section>
-        </article>
+        <section id="top" class="scroll-animation">
+            <img src="img/icon.png" alt="">
+            <h1>Bem-vindo ao Café Aroma</h1>
+            <p>Descubra o sabor único dos nossos cafés artesanais!</p>
+            <a href="#menu" class="btn">Nós conheça</a>
+        </section>
+        <section id="sobre" class="scroll-animation">
+            <h2>Sobre Nós</h2>
+            <p>No Café Aroma, combinamos paixão por café com um ambiente acolhedor. Cada xícara é feita com grãos selecionados e muito carinho.</p>
+        </section>
+        <section id="menu" class="scroll-animation">
+            <h2>Nosso Menu</h2>
+            <p>Explore nossas opções de cafés, chás e sobremesas.</p>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+        </section>
+        <section id="local" class="scroll-animation">
+            <h2>Nos encontre!</h2>
+            <p>Rua 123, bairro1, cidadeAlfa.</p>
+            <a href="#">Visite-nos</a>
+        </section>
+        <button id="back-to-top" title="Voltar ao Topo">
+            <a class="up" href="#top">&#11205;</a>
+        </button>
     </main>
     <footer>
         <p>&copy; 2025 Café Aroma. Todos os direitos reservados.</p>
