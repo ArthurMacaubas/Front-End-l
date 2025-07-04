@@ -61,19 +61,97 @@ main {
 
 #sobre {
     background-color: var(--accentColor);
+    color: var(--bodyFontColor);
     height: 50vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     text-align: center;
 
+    font-family: "Quicksand", sans-serif;
 
     h2 {
-        margin-bottom: 8rem;
-        padding: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-weight: bold;
+        font-size: 40px;
     }
+
+    p {
+        font-size: 22px;
+        padding-inline: 100px;
+        justify-content: center;
+    }
+}
+
+#menu {
+    background-color: var(--backColor);
+    color: var(--bodyFontColor);
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+
+    font-family: "Quicksand", sans-serif;
+
+    h2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 22px;
+        padding-inline: 100px;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+.menu-item {
+
+    background-color: var(--accentColor);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#local {
+    background-color: var(--bodyFontColor);
+    color: var(--backColor);
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+
+    font-family: "Quicksand", sans-serif;
+
+    h2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 22px;
+        padding-inline: 100px;
+        justify-content: center;
+    }
+}
+
+footer{
+    background-color: var(--accentColor);
+    color: var(--bodyFontColor);
 }
 
 #back-to-top {
@@ -93,12 +171,14 @@ main {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.up{
+.up {
     text-decoration: none;
     color: var(--bodyFontColor);
+    padding: 15px;
 }
 
-#back-to-top:hover, .up::before {
+#back-to-top:hover,
+.up::before {
     color: var(--backColor);
     background-color: rgb(179, 165, 148);
     transform: scale(1.1);
