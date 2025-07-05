@@ -1,29 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/footer.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Café Aroma - Receitas</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="CSS/stylesReceita.css">
+    <script src="../backToTop.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="#">Receitas</a></li>
-                <li><a href="./fornecedores.html">Fornecedores</a></li>
+            <ul class="header">
+                <li><a href="home.html">Home</a></li>
+                <li><a class="atual" href="#receitas">Receitas</a></li>
+                <li><a href="fornecedores.html">Fornecedores</a></li>
+                <li><a href="../menu.html">Voltar</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <section id="receitas">
+            <h1>Nossas Receitas</h1>
+            <p>Descubra como preparar os melhores cafés artesanais em casa!</p>
+            <div class="recipe-container">
+                <div class="recipe-item">
+                    <img src="./img/cafe1.jpg" alt="Café com Chocolate">
+                    <h2>Café com Sabor Chocolate</h2>
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>200ml de água</li>
+                        <li>20g de café moído (preferencialmente torrado)</li>
+                        <li>10g de grãos de cacau ou 5g de chocolate em pó</li>
+                        <li>1 colher de chá de açúcar (opcional)</li>
+                    </ul>
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Ferva a água e deixe esfriar por 30 segundos.</li>
+                        <li>Coloque o café moído em um filtro ou prensa francesa e adicione a água quente.</li>
+                        <li>Deixe infusionar por 4 minutos, depois coe o café.</li>
+                        <li>Adicione os grãos de cacau ou chocolate em pó e mexa bem até dissolver.</li>
+                        <li>Adicione açúcar a gosto e sirva quente em uma xícara.</li>
+                    </ol>
+                </div>
+                <div class="recipe-item">
+                    <img src="./img/cafe2.jpg" alt="Café com Baunilha">
+                    <h2>Café com Sabor Baunilha</h2>
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>150ml de leite (integral ou vegetal)</li>
+                        <li>50ml de café espresso</li>
+                        <li>1 fava de baunilha ou 1 colher de chá de extrato de baunilha</li>
+                        <li>1 colher de chá de mel ou açúcar (opcional)</li>
+                    </ul>
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Aqueça o leite em uma panela em fogo baixo até formar espuma.</li>
+                        <li>Corte a fava de baunilha ao meio e raspe as sementes, adicionando ao leite quente (ou use extrato).</li>
+                        <li>Prepare o espresso e despeje-o em uma xícara.</li>
+                        <li>Adicione o leite quente sobre o espresso e mexa delicadamente.</li>
+                        <li>Adicione mel ou açúcar a gosto e sirva imediatamente.</li>
+                    </ol>
+                </div>
+                <div class="recipe-item">
+                    <img src="./img/cafe3.jpg" alt="Café com Canela">
+                    <h2>Café com Sabor Canela</h2>
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>30ml de café espresso</li>
+                        <li>1 pau de canela ou 1/2 colher de chá de canela em pó</li>
+                        <li>1 colher de chá de açúcar mascavo (opcional)</li>
+                        <li>100ml de água quente (para diluir, opcional)</li>
+                    </ul>
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Prepare o espresso usando uma máquina ou método tradicional.</li>
+                        <li>Adicione o pau de canela ou a canela em pó ao café quente e mexa bem.</li>
+                        <li>Se desejar, dilua com água quente e adicione açúcar mascavo a gosto.</li>
+                        <li>Deixe descansar por 1 minuto para intensificar o sabor da canela.</li>
+                        <li>Sirva em uma xícara e polvilhe um pouco de canela em pó por cima, se desejar.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <button id="back-to-top" title="Voltar ao Topo">
+            <a class="up" href="#receitas">⯅</a>
+        </button>
     </main>
     <footer>
-
+        <p>© 2025 Café Aroma. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>

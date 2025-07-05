@@ -1,0 +1,78 @@
+#fornecedores {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: var(--backColor);
+    color: var(--bodyFontColor);
+
+    h1 {
+        font-size: 2.75rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: var(--secondaryColor);
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+    }
+
+    .supplier-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+        padding: 0 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.supplier-item {
+    background-color: var(--accentColor);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        color: var(--secondaryColor);
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        text-align: left;
+        color: var(--bodyFontColor);
+
+        strong {
+            color: var(--secondaryColor);
+        }
+    }
+}
+
+.supplier-item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: lighten(var(--accentColor), 5%);
+}
+
+@media (max-width: 768px) {
+    #fornecedores h1 {
+        font-size: 2rem;
+    }
+
+    #fornecedores p {
+        font-size: 1rem;
+    }
+
+    .supplier-item {
+        width: 100%;
+        padding: 1rem;
+    }
+}

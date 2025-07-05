@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fornecedores</title>
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/footer.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Café Aroma - Nossos Fornecedores</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/stylesFornecedores.css">
+    <script src="../backToTop.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./receitas.html">Receitas</a></li>
-                <li><a href="#">Fabricantes</a></li>
+            <ul class="header">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li><a class="atual" href="#fornecedores">Fornecedores</a></li>
+                <li><a href="../menu.html">Voltar</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <section id="fornecedores">
+            <h1>Nossos Valorosos Fornecedores</h1>
+            <p>Conheça os parceiros dedicados que fornecem grãos de alta qualidade, essenciais para o sabor único do Café Aroma. Desde 2015, trabalhamos juntos para oferecer o melhor café artesanal.</p>
+            <div class="supplier-container">
+                <div class="supplier-item">
+                    <h2>Fazenda Serra Verde</h2>
+                    <p><strong>Localização:</strong> Região das Matas de Minas, Minas Gerais, Brasil</p>
+                    <p><strong>Contato:</strong> serra.verde@cafe.com | (31) 99999-8888</p>
+                    <p>Com mais de 50 anos de tradição, a Fazenda Serra Verde cultiva grãos de café arábica em altitudes de 1.200m, garantindo um sabor rico, encorpado e com notas de caramelo. Seus métodos sustentáveis destacam-se na região.</p>
+                </div>
+                <div class="supplier-item">
+                    <h2>Cooperativa Colinas</h2>
+                    <p><strong>Localização:</strong> Alta Mogiana, São Paulo, Brasil</p>
+                    <p><strong>Contato:</strong> colinas.coop@cafe.com | (19) 88888-7777</p>
+                    <p>Fundada por pequenos produtores em 2008, a Cooperativa Colinas é especialista em grãos de café robusta. Seu processo artesanal adiciona um toque robusto e terroso, perfeito para blends intensos.</p>
+                </div>
+                <div class="supplier-item">
+                    <h2>Plantação Vale Doce</h2>
+                    <p><strong>Localização:</strong> Chapada Diamantina, Bahia, Brasil</p>
+                    <p><strong>Contato:</strong> vale.doce@cafe.com | (75) 77777-6666</p>
+                    <p>Certificada como orgânica desde 2010, a Plantação Vale Doce produz grãos com notas frutadas e um final adocicado. Localizada em uma reserva natural, valoriza a biodiversidade local.</p>
+                </div>
+            </div>
+        </section>
+        <button id="back-to-top" title="Voltar ao Topo">
+            <a class="up" href="#fornecedores">⯅</a>
+        </button>
     </main>
     <footer>
-
+        <p>© 2025 Café Aroma. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>

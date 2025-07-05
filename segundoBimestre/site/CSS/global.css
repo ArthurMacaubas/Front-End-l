@@ -5,18 +5,47 @@
 
 :root {
     --headerColor: rgb(202, 173, 137);
-    --backColor: #f5e9d4; 
-    --bodyFontColor: #3c2f2f; 
-    --secondaryColor: #5c4b3d; 
-    --accentColor: #d4a373; 
+    --backColor: #f5e9d4;
+    --bodyFontColor: #3c2f2f;
+    --secondaryColor: #5c4b3d;
+    --accentColor: #d4a373;
     --linkSize: 1.2rem;
     --linkSizeMobile: 1rem;
-    --fontFamily: 'Poppins', sans-serif;
+    --fontFamily: 'Quicksand', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Quicksand";
+    font-family: var(--fontFamily);
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .menu-item {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    #sobre p, #menu p, #local p {
+        font-size: 1.125rem;
+        padding: 0 0.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
 }

@@ -7,64 +7,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Café Aroma - 2° Bim</title>
+    <title>Café Aroma</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/global.css">
-    <script src="backToTop.js"></script>
+    <script src="backToTop.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
             <ul class="header">
-                <li><a href="#">Home</a></li>
-                <li><a href="./receitas.html">Receitas</a></li>
-                <li><a href="./fornecedores.html">Fornecedores</a></li>
+                <li><a class="atual" href="#home">Home</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li><a href="fornecedores.html">Fornecedores</a></li>
+                <li><a href="../menu.html">Voltar</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="top">
-            <img src="img/icon.png" alt="">
+        <section id="home">
+            <img src="img/icon.png" alt="Café Aroma Logo">
             <h1>Bem-vindo ao Café Aroma</h1>
             <p>Descubra o sabor único dos nossos cafés artesanais!</p>
-            <a href="#menu" class="btn">Nós conheça</a>
+            <a href="#menu" class="btn">Conheça nosso menu</a>
         </section>
         <section id="sobre">
             <h2>Sobre Nós</h2>
-            <p>No Café Aroma, combinamos paixão por café com um ambiente acolhedor. Cada xícara é feita com grãos selecionados e muito carinho.</p>
+            <p>No Café Aroma, combinamos paixão por café com um ambiente acolhedor. Cada xícara é feita com grãos selecionados e muito carinho, oferecendo uma experiência inesquecível.</p>
         </section>
         <section id="menu">
             <h2>Nosso Menu</h2>
-            <p>Explore nossas opções de cafés, chás e sobremesas.</p>
-            <div class="menu-item">
-                <h3>Produto1</h3>
-                <p>detalhes do produto</p>
-                <a href="">Veja a receita</a>
+            <p>Explore nossas opções de cafés, chás e sobremesas artesanais.</p>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="img/cafe1.jpg" alt="Produto 1">
+                    <h3>Produto 1</h3>
+                    <p>Um café rico e encorpado com notas de chocolate.</p>
+                    <a href="receitas.html" class="btn-link">Veja a receita</a>
+                </div>
+                <div class="menu-item">
+                    <img src="img/cafe2.jpg" alt="Produto 2">
+                    <h3>Produto 2</h3>
+                    <p>Latte cremoso com um toque suave de baunilha.</p>
+                    <a href="receitas.html" class="btn-link">Veja a receita</a>
+                </div>
+                <div class="menu-item">
+                    <img src="img/cafe3.jpg" alt="Produto 3">
+                    <h3>Produto 3</h3>
+                    <p>Espresso intenso com um leve sabor de canela.</p>
+                    <a href="receitas.html" class="btn-link">Veja a receita</a>
+                </div>
             </div>
-            <div class="menu-item">
-                <h3>produto2</h3>
-                <p>detalhes do produto</p>
-                <a href="">Veja a receita</a>
-            </div>
-            <div class="menu-item">
-                <h3>produto3</h3>
-                <p>detalhes do produto</p>
-                <a href="">Veja a receita</a>
-            </div>
-
         </section>
         <section id="local">
             <h2>Nos encontre!</h2>
-            <p>Rua 123, bairro1, cidadeAlfa.</p>
-            <a href="#">Visite-nos</a>
+            <p>Rua 123, Bairro 1, Cidade Alfa - Aberto de 8h às 20h</p>
+            <a href="https://www.google.com/maps" target="_blank" class="btn">Visite-nos</a>
         </section>
         <button id="back-to-top" title="Voltar ao Topo">
-            <a class="up" href="#top">&#11205;</a>
+            <a class="up" href="#home">⯅</a>
         </button>
     </main>
     <footer>
-        <p>&copy; 2025 Macaúbas. Todos os direitos reservados.</p>
+        <p>© 2025 Café Aroma. Todos os direitos reservados.</p>
     </footer>
 </body>
 

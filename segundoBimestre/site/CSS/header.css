@@ -51,3 +51,7 @@ header nav ul.header a:hover {
     background-color: var(--backColor);
     transition: .5s;
 }
+
+.atual {
+    background-color: var(--backColor);
+}
