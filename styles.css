@@ -17,7 +17,7 @@ header {
     width: 100%;
     padding: 20px 0;
     position: absolute;
-    top: 0;
+    top: 20%;
 }
 
 nav {
@@ -37,6 +37,12 @@ nav ul {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
+
+    h1{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
 }
 
 nav ul ul {
